@@ -45,7 +45,7 @@
 		9B372B1219EFF6C700295862 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9B372B1319EFFB1300295862 /* github-markdown.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "github-markdown.css"; sourceTree = "<group>"; };
 		9B4A580B2191DB2B00D780A0 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
-		9B6E1E8D19E2EB2100C72D13 /* Edhita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Edhita.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B6E1E8D19E2EB2100C72D13 /* editorLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = editorLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6E1E9119E2EB2100C72D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B6E1E9219E2EB2100C72D13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B6E1E9B19E2EB2100C72D13 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -60,6 +60,8 @@
 		9B91999319E5185C003751FA /* EditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 		C9064963BAFB1A9695BB7AC8 /* libPods-Edhita.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Edhita.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E29EC0DAB28A9310422CC0 /* Pods-Edhita.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Edhita.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Edhita/Pods-Edhita.debug.xcconfig"; sourceTree = "<group>"; };
+		E8EC0139245C3D4F00F8E175 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		E8EC013A245C3D4F00F8E175 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +116,7 @@
 		9B6E1E8E19E2EB2100C72D13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B6E1E8D19E2EB2100C72D13 /* Edhita.app */,
+				9B6E1E8D19E2EB2100C72D13 /* editorLite.app */,
 				9B6E1EA419E2EB2100C72D13 /* EdhitaTests.xctest */,
 			);
 			name = Products;
@@ -218,7 +220,7 @@
 			);
 			name = Edhita;
 			productName = Edhita;
-			productReference = 9B6E1E8D19E2EB2100C72D13 /* Edhita.app */;
+			productReference = 9B6E1E8D19E2EB2100C72D13 /* editorLite.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9B6E1EA319E2EB2100C72D13 /* EdhitaTests */ = {
@@ -251,7 +253,7 @@
 				TargetAttributes = {
 					9B6E1E8C19E2EB2100C72D13 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = H4Z42X3L6X;
+						DevelopmentTeam = BBC7MF72WQ;
 						LastSwiftMigration = 1020;
 					};
 					9B6E1EA319E2EB2100C72D13 = {
@@ -269,6 +271,7 @@
 				en,
 				Base,
 				ja,
+				"zh-Hant",
 			);
 			mainGroup = 9B6E1E8419E2EB2100C72D13;
 			productRefGroup = 9B6E1E8E19E2EB2100C72D13 /* Products */;
@@ -416,6 +419,7 @@
 			children = (
 				9B372B1019EFF6BB00295862 /* en */,
 				9B372B1219EFF6C700295862 /* ja */,
+				E8EC013A245C3D4F00F8E175 /* zh-Hant */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -424,6 +428,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9B6E1E9E19E2EB2100C72D13 /* Base */,
+				E8EC0139245C3D4F00F8E175 /* zh-Hant */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -542,12 +547,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 16;
-				DEVELOPMENT_TEAM = H4Z42X3L6X;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BBC7MF72WQ;
 				INFOPLIST_FILE = Edhita/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bornneet.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jim.editorLite;
+				PRODUCT_NAME = editorLite;
 				SWIFT_OBJC_BRIDGING_HEADER = "Edhita/Edhita-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -560,12 +566,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 16;
-				DEVELOPMENT_TEAM = H4Z42X3L6X;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BBC7MF72WQ;
 				INFOPLIST_FILE = Edhita/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bornneet.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jim.editorLite;
+				PRODUCT_NAME = editorLite;
 				SWIFT_OBJC_BRIDGING_HEADER = "Edhita/Edhita-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};

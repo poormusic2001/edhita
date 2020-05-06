@@ -17,7 +17,7 @@ class FinderListViewController: EDHFinderListViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.initAd()
+        //self.initAd()
 
         let settingsItem = Utility.barButtonItem(target: self,
                                                  icon: FAKIonIcons.gearAIcon(withSize: self.kToolbarIconSize),

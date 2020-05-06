@@ -9,6 +9,7 @@
 import UIKit
 import WebKit
 
+
 class EditorView: UIView, UITextViewDelegate {
 
     let kBorderWidth: CGFloat = 1.0
@@ -17,7 +18,7 @@ class EditorView: UIView, UITextViewDelegate {
         case none, edit, preview, split
     }
 
-    var textView: UITextView!
+    var textView: CYRTextView!//UITextView!
     var webView: WKWebView!
     var onChangeText: () -> Void = {}
     var finderItem: EDHFinderItem? {
@@ -40,8 +41,8 @@ class EditorView: UIView, UITextViewDelegate {
         super.init(frame: frame)
 
         self.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-
-        self.textView = UITextView(frame: self.bounds)
+        
+        self.textView = CYRTextView(frame: self.bounds)
         self.textView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         self.textView.delegate = self
         self.addSubview(self.textView)
