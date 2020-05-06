@@ -10,8 +10,8 @@
 	<string>LaunchScreen</string>
 	<key>UIFileSharingEnabled</key>
 	<true/>
-    <key>LSSupportsOpeningDocumentsInPlace</key>
-    <true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleVersion</key>
