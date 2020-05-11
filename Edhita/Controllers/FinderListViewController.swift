@@ -24,6 +24,7 @@ class FinderListViewController: EDHFinderListViewController {
                                                  action: #selector(settingsItemDidTap))
         navigationItem.leftBarButtonItem = settingsItem
         navigationItem.leftItemsSupplementBackButton = true
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {

@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import Highlightr
 
 
 class EditorView: UIView, UITextViewDelegate {
@@ -18,7 +19,7 @@ class EditorView: UIView, UITextViewDelegate {
         case none, edit, preview, split
     }
 
-    var textView: CYRTextView!//UITextView!
+    var textView: UITextView!//CYRTextView!//UITextView!
     var webView: WKWebView!
     var onChangeText: () -> Void = {}
     var finderItem: EDHFinderItem? {
@@ -42,9 +43,9 @@ class EditorView: UIView, UITextViewDelegate {
 
         self.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
-        self.textView = CYRTextView(frame: self.bounds)
+        self.textView = UITextView(frame: self.bounds)//CYRTextView(frame: self.bounds)
         self.textView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        self.textView.delegate = self
+        self.textView.delegate = self        
         self.addSubview(self.textView)
 
         self.webView = WKWebView(frame: self.bounds)
@@ -136,8 +137,14 @@ class EditorView: UIView, UITextViewDelegate {
         if let item = self.finderItem {
             if item.isEditable() {
                 self.textView.isEditable = true
-                self.textView.text = item.content()
-
+                
+                let hightr = Highlightr()
+                hightr?.setTheme(to: "rainbow")
+                self.textView.attributedText = hightr?.highlight(item.content(), as: nil)
+                self.textView.backgroundColor = hightr?.theme.themeBackgroundColor
+                
+                //self.textView.text = item.content()
+                
                 if SettingsForm.sharedForm.accessoryView {
                     self.textView.inputAccessoryView = EDHInputAccessoryView(textView: self.textView)
                 } else {
@@ -156,7 +163,7 @@ class EditorView: UIView, UITextViewDelegate {
             self.loadBlank()
         }
 
-        EDHFontSelector.shared().apply(to: self.textView)
+        //EDHFontSelector.shared().apply(to: self.textView)
     }
 
     func loadBlank() {

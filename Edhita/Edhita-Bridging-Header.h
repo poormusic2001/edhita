@@ -13,4 +13,4 @@
 #import "FCFileManager.h"
 #import "GHMarkdownParser.h"
 #import "VTAcknowledgementsViewController.h"
-#import "CYRTextView.h"
+//#import "CYRTextView.h"

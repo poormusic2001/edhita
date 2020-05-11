@@ -3,7 +3,6 @@ PODS:
   - Colours (5.13.0):
     - Colours/ObjC (= 5.13.0)
   - Colours/ObjC (5.13.0)
-  - CYRTextView (0.4.0)
   - EDHFinder (0.1.2):
     - EDHUtility (~> 0.1)
     - FCFileManager (~> 1.0)
@@ -64,6 +63,7 @@ PODS:
   - "GoogleUtilities/NSData+zlib (6.0.0)"
   - GoogleUtilities/Reachability (6.0.0):
     - GoogleUtilities/Logger
+  - Highlightr (2.1.0)
   - Megrim (0.1.0)
   - MGSwipeTableCell (1.6.8)
   - nanopb (0.3.901):
@@ -72,13 +72,11 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - SSZipArchive (2.2.2)
-  - SwiftLint (0.32.0)
   - VTAcknowledgementsViewController (0.17)
 
 DEPENDENCIES:
   - Bootstrap (from `https://raw.githubusercontent.com/tnantoka/podspecs/master/Specs/Bootstrap/Bootstrap.podspec`)
   - Colours (~> 5.13.0)
-  - CYRTextView
   - EDHFinder (~> 0.1)
   - EDHFontSelector (~> 0.2.2)
   - EDHInputAccessoryView (~> 0.1)
@@ -86,15 +84,14 @@ DEPENDENCIES:
   - GHMarkdownParser (~> 0.1)
   - github-markdown-css (from `https://raw.githubusercontent.com/tnantoka/podspecs/master/Specs/github-markdown-css/github-markdown-css.podspec`)
   - Google-Mobile-Ads-SDK
+  - Highlightr
   - Megrim (from `https://raw.githubusercontent.com/tnantoka/podspecs/master/Specs/Megrim/Megrim.podspec`)
   - SSZipArchive
-  - SwiftLint
   - VTAcknowledgementsViewController (~> 0.12)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Colours
-    - CYRTextView
     - EDHFinder
     - EDHFontSelector
     - EDHInputAccessoryView
@@ -106,10 +103,10 @@ SPEC REPOS:
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleUtilities
+    - Highlightr
     - MGSwipeTableCell
     - nanopb
     - SSZipArchive
-    - SwiftLint
     - VTAcknowledgementsViewController
 
 EXTERNAL SOURCES:
@@ -123,7 +120,6 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Bootstrap: cbbdd0eec527ba4b52611893814ff3b7d8075a0e
   Colours: f24220c38f13deac88612667e9b4a7fb96b871d4
-  CYRTextView: 1c1a4d708eee54ecad66b8ad42dbfe73083bdfce
   EDHFinder: 26c9daabda0a535f68db0451ae2bd4eaefad4469
   EDHFontSelector: db446999fa1bd5db9dbd3709018790d2dfc27f76
   EDHInputAccessoryView: 3e15385630d6dabb335c52981ffde957d192c8d0
@@ -136,13 +132,13 @@ SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 9d3474acb70a6c12bfa69c9fe1ac28d7de8b9be9
   GoogleAppMeasurement: 7f028ea162b72c8f326daec74afc95d94f7a47d6
   GoogleUtilities: f1faafc033ea203adf1783ce00af455bb99d0e5b
+  Highlightr: 595f3e100737c8de41113385da8bd0b5b65212c6
   Megrim: 8498c70aac297ca841e38e3400e45323be9cf6ef
   MGSwipeTableCell: dc4eca3212ed38a563b27d6aa7b3c01ce656c1e2
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SSZipArchive: fa16b8cc4cdeceb698e5e5d9f67e9558532fbf23
-  SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
   VTAcknowledgementsViewController: 6056f5f5e5ed995bbf0581bed6ddd29355ca9a80
 
-PODFILE CHECKSUM: 3aca970608df3b40d0378fbbac5f87fcd68f4dd3
+PODFILE CHECKSUM: e5781a05b9186591c79ded91c152d90a3d3a8f7c
 
 COCOAPODS: 1.8.4

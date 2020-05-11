@@ -168,10 +168,10 @@ class EditorViewController: UIViewController, EDHFinderListViewControllerDelegat
             handler: { (_: UIAlertAction!) in
                 guard let item = self.finderItem else { return }
 
-                var items: [Any] = [item.fileURL()]
+                var items: [Any] = [item.fileURL() as Any]
 
                 if item.isEditable() {
-                    items.append(item.content())
+                    items.append(item.content() as Any)
                 }
 
                 let activityController = UIActivityViewController(activityItems: items, applicationActivities: nil)
@@ -222,6 +222,10 @@ class EditorViewController: UIViewController, EDHFinderListViewControllerDelegat
     }
 
     func listViewController(_ controller: EDHFinderListViewController!, didSelectFile item: EDHFinderItem!) {
+        //Prevent the enter the zip file.
+        guard !item.name.hasSuffix(".zip") else {
+            return
+        }
         self.finderItem = item
 
         // Show editor controller on compact devise

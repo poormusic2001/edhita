@@ -11,10 +11,10 @@ target 'Edhita' do
   pod 'FXForms', '~> 1.2'
   pod 'GHMarkdownParser', '~> 0.1'
   pod 'VTAcknowledgementsViewController', '~> 0.12'
-  pod 'SwiftLint'
+  #pod 'SwiftLint'
   pod 'SSZipArchive'
-  pod 'CYRTextView'
-
+  #pod 'CYRTextView'
+  pod 'Highlightr'
 
   pod 'Bootstrap', podspec: 'https://raw.githubusercontent.com/tnantoka/podspecs/master/Specs/Bootstrap/Bootstrap.podspec'
   pod 'Megrim', podspec: 'https://raw.githubusercontent.com/tnantoka/podspecs/master/Specs/Megrim/Megrim.podspec'
