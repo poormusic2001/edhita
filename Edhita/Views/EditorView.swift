@@ -176,11 +176,18 @@ class EditorView: UIView, UITextViewDelegate {
                 self.loadHTML(self.renderMarkdown(item.content()), baseURL: item.parent().fileURL())
             } else {
                 self.loadURL(item.fileURL())
+//                do {
+//                    let content = try String(contentsOf: item.fileURL(), encoding: .utf8)
+//                    self.loadHTML(content, baseURL: nil)
+//                } catch {
+//                    self.loadBlank()
+//                }
             }
         }
     }
 
     func loadURL(_ url: URL!) {
+        
         self.webView.load(
             URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 0.0)
         )

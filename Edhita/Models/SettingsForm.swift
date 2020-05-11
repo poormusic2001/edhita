@@ -43,8 +43,8 @@ open class SettingsForm: NSObject, FXForm {
             [
                 FXFormFieldHeader: "",
                 FXFormFieldType: FXFormFieldTypeLabel,
-                FXFormFieldAction: "fontDidTap:",
-                FXFormFieldTitle: NSLocalizedString("Font", comment: "")
+                FXFormFieldAction: "themeDidTap:",
+                FXFormFieldTitle: NSLocalizedString("Theme", comment: "")
             ],
             [
                 FXFormFieldHeader: "",

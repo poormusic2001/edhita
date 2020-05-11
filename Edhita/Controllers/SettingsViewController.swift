@@ -36,9 +36,9 @@ class SettingsViewController: FXFormViewController {
 
     // MARK: - Actions
 
-    @objc func fontDidTap(_ sender: AnyObject) {
-        let fontController = EDHFontSelector.shared().settingsViewController()
-        self.navigationController?.pushViewController(fontController!, animated: true)
+    @objc func themeDidTap(_ sender: AnyObject) {
+//        let fontController = ÷EDHFontSelector.shared().settingsViewController()
+        //self.navigationController?.pushViewController(fontController!, animated: true)        
     }
 
     @objc func acknowledgementsDidTap(_ sender: AnyObject) {
